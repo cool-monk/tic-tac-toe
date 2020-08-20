@@ -1,0 +1,116 @@
+.game-panel-wrapper {
+  text-align: center;
+}
+
+.game-panel {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+.menu-wrapper {
+  width: 20%;
+  min-height: 70vh;
+  color: white;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.menu-wrapper h4 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.menu-wrapper h5 {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.menu-wrapper li {
+  cursor: pointer;
+  list-style: none;
+}
+
+.menu-wrapper h5:hover {
+  background-color: #ff5733;
+}
+
+.board-wrapper {
+  width: 80%;
+  border: 2px solid black;
+}
+
+.navigation {
+  height: 100px;
+}
+
+.board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+:root {
+  --cell-size: 110px;
+  --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--mark-size);
+  cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:first-child,
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+}
+
+/* .cell.x::before,
+.cell.x:after {
+  content: "";
+  position: absolute;
+  width: calc(var(--mark-size) * 0.15);
+  height: calc(var(--mark-size));
+  background-color: black;
+}
+
+.cell.x::before {
+  transform: rotate(45deg);
+}
+.cell.x::after {
+  transform: rotate(-45deg);
+} */
+
+/* AddRoom page */
+.add-room-input {
+  width: 250px;
+}

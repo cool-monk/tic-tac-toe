@@ -1,0 +1,35 @@
+.join-wrapper {
+  text-align: center;
+}
+
+.join-wrapper h1,
+h3 {
+  color: white;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+form label {
+  display: block;
+  position: relative;
+  left: -50px;
+  color: white;
+}
+
+form input {
+  margin-bottom: 25px;
+}
+
+.register-btn {
+  display: block;
+}
+
+.message-success {
+  color: green;
+}
